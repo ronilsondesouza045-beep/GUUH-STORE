@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Star, Trash2, Edit2, Send, X, MessageSquareQuote } from 'lucide-react';
 import { db, auth } from '../services/firebase';
 import { 
