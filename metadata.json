@@ -1,0 +1,6 @@
+{
+  "name": "SHOPP ZAHRIR",
+  "description": "Luxury Gothic IMVU Premium Shop - Produtos Premium IMVU, gift cards, crowns e mais.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

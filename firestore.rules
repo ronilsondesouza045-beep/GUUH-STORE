@@ -1,0 +1,41 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper para verificar se é o administrador mestre
+    function isMasterAdmin() {
+      return request.auth != null && (
+        request.auth.token.email == 'ronisouza495@gmail.com' || 
+        request.auth.uid == 'kPb3iSPWLHXeELYJvPKQWUvB5Ml1'
+      );
+    }
+
+    // Regra Global: Admin tem acesso total a tudo
+    match /{document=**} {
+      allow read, write: if isMasterAdmin();
+    }
+
+    // Regras específicas para usuários
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    match /orders/{orderId} {
+      allow read: if request.auth != null && (resource.data.userId == request.auth.uid || isMasterAdmin());
+      allow create: if request.auth != null;
+      allow update, delete: if isMasterAdmin();
+    }
+
+    match /support_chats/{chatId} {
+      allow read, update: if request.auth != null && (resource.data.userId == request.auth.uid || isMasterAdmin());
+      allow create: if request.auth != null;
+      allow delete: if isMasterAdmin();
+    }
+
+    match /feedbacks/{feedbackId} {
+      allow read: if true; // Feedbacks are public
+      allow create: if request.auth != null;
+      allow update, delete: if request.auth != null && (resource.data.userId == request.auth.uid || isMasterAdmin());
+    }
+  }
+}

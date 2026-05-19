@@ -1,0 +1,75 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile and settings",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string", "enum": ["admin", "user"] }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Customer order",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "items": { "type": "array" },
+        "total": { "type": "number" },
+        "status": { "type": "string", "enum": ["aguardando pagamento", "em análise", "aprovado", "enviado", "cancelado"] },
+        "userData": { "type": "object" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "items", "total", "status", "userData", "createdAt"]
+    },
+    "SupportChat": {
+      "title": "SupportChat",
+      "description": "Chat messages for support",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "messages": { "type": "array" },
+        "status": { "type": "string", "enum": ["open", "closed"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "messages", "status", "createdAt"]
+    },
+    "Feedback": {
+      "title": "Feedback",
+      "description": "Customer feedback and reviews",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "userAvatar": { "type": "string" },
+        "text": { "type": "string" },
+        "rating": { "type": "number" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "userName", "text", "rating", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User documents"
+    },
+    "/orders/{orderId}": {
+      "schema": "Order",
+      "description": "Order records"
+    },
+    "/support_chats/{chatId}": {
+      "schema": "SupportChat",
+      "description": "Live support chat sessions"
+    },
+    "/feedbacks/{feedbackId}": {
+      "schema": "Feedback",
+      "description": "Customer feedback and reviews"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #d6a84f;
+  --color-blood: #b30000;
+  --color-dark: #050505;
+  --color-card: #121212;
+  
+  --font-cinzel: "Cinzel", serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+
+  --shadow-gold: 0 0 15px rgba(214, 168, 79, 0.3);
+  --shadow-blood: 0 0 15px rgba(179, 0, 0, 0.4);
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-gray-200 font-sans selection:bg-blood selection:text-white;
+  }
+}
+
+.gothic-gradient {
+  background: radial-gradient(circle at center, #1a0505 0%, #050505 100%);
+}
+
+.gold-border {
+  border: 1px solid var(--color-gold);
+  box-shadow: var(--shadow-gold);
+}
+
+.blood-glow {
+  box-shadow: var(--shadow-blood);
+}
+
+.rose-pattern {
+  background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png');
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(214, 168, 79, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(214, 168, 79, 0.5);
+}
