@@ -19,7 +19,8 @@ export const CATEGORIES = [
   "Gift Card Apple",
   "Números Virtuais",
   "Via Presente IMVU",
-  "Via Direto IMVU"
+  "Via Direto IMVU",
+  "Assinatura VIP"
 ];
 
 export const CATEGORY_DRIVE_LINKS: Record<string, string> = {
@@ -107,4 +108,54 @@ export const PRODUCTS = [
     price: [14.00, 28.00, 42.00, 56.00, 70.00, 84.00, 112.00, 140.00, 280.00][idx],
     image: "https://cdn.ggmax.com.br/images/7e8ff17f9bccb16332531a877538dde7.sm.jpg"
   })),
+
+  // Assinatura VIP
+  {
+    id: "vip-gold",
+    category: "Assinatura VIP",
+    name: "VIP Gold",
+    price: 32.00,
+    description: "Assinatura VIP Gold para sua conta IMVU com todos os benefícios inclusos.",
+    image: "https://tse2.mm.bing.net/th/id/OIP.ocVqaVGhYyjr8Eh2MC8pBwAAAA?pid=Api&P=0&h=180"
+  },
+  {
+    id: "vip-plat-1",
+    category: "Assinatura VIP",
+    name: "VIP Platinum 1 Mês",
+    price: 38.00,
+    description: "Assinatura VIP Platinum válida por 1 mês para o seu perfil.",
+    image: "https://cdn.ggmax.com.br/images/61a95fc96df775ccafa9142bc849a749.sm.jpg"
+  },
+  {
+    id: "vip-plat-3",
+    category: "Assinatura VIP",
+    name: "VIP Platinum 3 Meses",
+    price: 114.00,
+    description: "Combo trimestral de Assinatura VIP Platinum com desconto especial.",
+    image: "https://cdn.ggmax.com.br/images/61a95fc96df775ccafa9142bc849a749.sm.jpg"
+  },
+  {
+    id: "vip-plat-6",
+    category: "Assinatura VIP",
+    name: "VIP Platinum 6 Meses",
+    price: 228.00,
+    description: "Combo semestral de Assinatura VIP Platinum completo.",
+    image: "https://cdn.ggmax.com.br/images/61a95fc96df775ccafa9142bc849a749.sm.jpg"
+  },
+  {
+    id: "vip-diamond",
+    category: "Assinatura VIP",
+    name: "VIP Diamond",
+    price: 110.00,
+    description: "Assinatura VIP Diamond Premium.",
+    image: "https://tse3.mm.bing.net/th/id/OIP.jxkFY40ZLN93DzBc5XAQmAAAAA?pid=Api&P=0&h=180"
+  },
+  {
+    id: "vip-emerald",
+    category: "Assinatura VIP",
+    name: "VIP Esmerald",
+    price: 175.00,
+    description: "Crassa de elite para sua conta! Assinatura VIP Esmerald com benefícios máximos.",
+    image: "https://cdn.sistemawbuy.com.br/arquivos/b7f36453f415a540dffee82d02b0ae0c/produtos/6737cad79ce56/esmeralda-1-6737cad7da8b5_mini.jpg"
+  }
 ];
