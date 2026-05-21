@@ -25,7 +25,7 @@ export default function Navbar() {
           <Link to="/produtos" className="hover:text-gold transition-colors">PRODUTOS</Link>
           <Link to="/minha-conta" className="hover:text-gold transition-colors">MINHA CONTA</Link>
           <div className="h-4 w-px bg-gold/30 mx-2"></div>
-          <a href="https://www.instagram.com/guuh_zahirofc" target="_blank" rel="noreferrer" className="text-gold hover:text-white transition-colors">
+          <a href="https://www.instagram.com/shopp__zahrirofc?igsh=MTBxa2xhZTBuaTdtYg%3D%3D" target="_blank" rel="noreferrer" className="text-gold hover:text-white transition-colors">
             <Instagram size={20} />
           </a>
           <button onClick={() => navigate('/carrinho')} className="relative p-2 text-gold hover:scale-110 transition-transform">
@@ -67,7 +67,7 @@ export default function Navbar() {
             <Link to="/produtos" onClick={() => setIsOpen(false)} className="py-2 border-b border-gold/10">PRODUTOS</Link>
             <Link to="/minha-conta" onClick={() => setIsOpen(false)} className="py-2 border-b border-gold/10">MINHA CONTA</Link>
             <div className="flex justify-center gap-6 mt-4">
-               <a href="https://www.instagram.com/guuh_zahirofc" target="_blank" rel="noreferrer" className="text-gold">
+               <a href="https://www.instagram.com/shopp__zahrirofc?igsh=MTBxa2xhZTBuaTdtYg%3D%3D" target="_blank" rel="noreferrer" className="text-gold">
                 <Instagram size={24} />
               </a>
             </div>

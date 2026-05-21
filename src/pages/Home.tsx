@@ -56,7 +56,7 @@ export default function Home() {
               VER PRODUTOS <ShoppingBag size={18} className="group-hover:translate-x-1 transition-transform" />
             </button>
             <a 
-              href="https://www.instagram.com/guuh_zahirofc" 
+              href="https://www.instagram.com/shopp__zahrirofc?igsh=MTBxa2xhZTBuaTdtYg%3D%3D" 
               target="_blank" 
               rel="noreferrer"
               className="px-8 py-4 border-2 border-gold text-gold hover:bg-gold hover:text-black font-bold rounded transition-all flex items-center gap-2 tracking-widest uppercase text-xs"

@@ -111,7 +111,7 @@ export default function ProductDetail() {
                 <HelpCircle size={24} className="text-gold/40" />
                 <span className="text-[8px] text-gray-600 uppercase tracking-widest">Suporte</span>
              </div>
-             <a href="https://www.instagram.com/guuh_zahirofc" target="_blank" rel="noreferrer" className="flex flex-col items-center gap-2 group">
+             <a href="https://www.instagram.com/shopp__zahrirofc?igsh=MTBxa2xhZTBuaTdtYg%3D%3D" target="_blank" rel="noreferrer" className="flex flex-col items-center gap-2 group">
                 <Instagram size={24} className="text-gold group-hover:scale-110 transition-transform" />
                 <span className="text-[8px] text-gold uppercase tracking-widest">Instagram</span>
              </a>

@@ -104,7 +104,7 @@ export default function Products() {
                  <h4 className="text-blood font-black text-[10px] tracking-widest uppercase">Precisa de Ajuda?</h4>
                  <p className="text-[9px] text-gray-500 uppercase leading-relaxed">Nossos especialistas estão prontos para orientar sua compra.</p>
                  <a 
-                  href="https://www.instagram.com/guuh_zahirofc"
+                  href="https://www.instagram.com/shopp__zahrirofc?igsh=MTBxa2xhZTBuaTdtYg%3D%3D"
                   target="_blank"
                   className="block text-[9px] uppercase tracking-[0.3em] bg-blood text-white px-4 py-3 rounded font-bold hover:bg-white hover:text-black transition-all"
                  >
