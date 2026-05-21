@@ -6,6 +6,7 @@ service cloud.firestore {
     function isMasterAdmin() {
       return request.auth != null && (
         request.auth.token.email == 'ronisouza495@gmail.com' || 
+        request.auth.token.email == 'Guuhzahrir@gmail.com' || 
         request.auth.uid == 'kPb3iSPWLHXeELYJvPKQWUvB5Ml1'
       );
     }

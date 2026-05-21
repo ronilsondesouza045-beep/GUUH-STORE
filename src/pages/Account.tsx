@@ -26,7 +26,7 @@ export default function Account() {
     const unsubsAuth = auth.onAuthStateChanged(async (u) => {
       if (u) {
         const userDoc = await getDoc(doc(db, 'users', u.uid));
-        const adminEmails = ['ronisouza495@gmail.com'];
+        const adminEmails = ['ronisouza495@gmail.com', 'Guuhzahrir@gmail.com'];
         const isAdminUser = adminEmails.includes(u.email || '') || userDoc.data()?.role === 'admin';
         setUser({ ...u, ...userDoc.data(), isAdmin: isAdminUser });
         

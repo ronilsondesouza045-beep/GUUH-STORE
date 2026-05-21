@@ -30,7 +30,7 @@ export default function Admin() {
   useEffect(() => {
     const unsubs = auth.onAuthStateChanged(async (user) => {
       if (user) {
-        const adminEmails = ['ronisouza495@gmail.com'];
+        const adminEmails = ['ronisouza495@gmail.com', 'Guuhzahrir@gmail.com'];
         if (adminEmails.includes(user.email || '')) {
           setIsAdmin(true);
         } else {
